@@ -233,23 +233,20 @@ addButton.forEach(function (button, index) {
 
 
     
-    // Example of how to call addToCart function when "add" button is clicked
-    var addButton = document.querySelectorAll(".add");
-    addButton.forEach(function (button, index) {
-        button.addEventListener("click", function () {
-            // Get product details
-            var productName = document.querySelectorAll(".fname")[index].textContent;
-            var productPrice = document.querySelectorAll(".row.product p")[index * 3 + 1].textContent.slice(1);
-    
-            // Add to cart
-            addToCart(productName, productPrice);
-        });
+    let button = document.getElementById("button");
+    let makepdf = document.getElementById("cart");
+ 
+    button.addEventListener("click", function () {
+        let mywindow = window.open("", "PRINT", 
+                "height=400,width=600");
+ 
+        mywindow.document.write(makepdf.innerHTML);
+ 
+        mywindow.document.close();
+        mywindow.focus();
+ 
+        mywindow.print();
+        mywindow.close();
+ 
+        return true;
     });
-
-    function generatePdf(){
-        const element = document.getElementById("cart");
-
-        html2pdf()
-        .from(element)
-        .save();
-    }
