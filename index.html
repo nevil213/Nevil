@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>SnapBite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!------ Include the above in your HEAD tag ---------->
+
+</head>
+
+<body>
+
+    <header class="header1 sticky">
+        <a href="/">
+            <img src="image/favicon-192x192.png" class="logo"></a>
+        <ul class="header2">
+            <li class="search1" onclick="toggleSearchInput()">
+                <img src="image/search.png" class="search">Search
+            </li>
+
+            <li style="display: none;" class="search-input"> <input type="search" name="" id="find"
+                    placeholder="search here...." onkeyup="search()"></li>
+            <a href="/help.html">
+                <li class="help1"><img src="image/help.png" class="help">Help</li>
+            </a>
+            <a href="#cart">
+                <li class="contact1"><img src="image/cart.png" class="contact">Cart</li>
+            </a>
+        </ul>
+    </header>
+
+    <div class="container content">
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item">
+                        <div class="pad15"><a href=#pizza1>
+                                <img src="image/Pizza.avif" alt="" class="food pizza"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                        <div class="pad15"><a href=#biryani1>
+                                <img src="image/Biryani.avif" alt="" class="food Biryani"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#north1>
+                                <img src="image/North_Indian.avif" alt="" class="food North_Indian"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#burger1>
+                                <img src="image/Burger.avif" alt="" class="food Burger">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#rolls1>
+                                <img src="image/Rolls.avif" alt="" class="food Rolls">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#khichdi1>
+                                <img src="image/Khichdi.avif" alt="" class="food Khichdi">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#south1>
+                                <img src="image/South_Indian.avif" alt="" class="food South_Indian"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#shake1>
+                                <img src="image/Shakes.avif" alt="" class="food Shakes">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#chinese1>
+                                <img src="image/Chinese.avif" alt="" class="food Chinese">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#paratha1>
+                                <img src="image/Paratha.avif" alt="" class="food Paratha">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#pasta1>
+                                <img src="image/Pasta.avif" alt="" class="food Pasta">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#noodles1>
+                                <img src="image/Noodles.avif" alt="" class="food Noodles">
+                        </div></a>
+                    </div>
+                    <div class="item">
+                        <div class="pad15">
+                            <a href=#cake1>
+                                <img src="image/Cakes.avif" alt="" class="food Cakes">
+                        </div></a>
+                    </div>
+                </div>
+                <button class="btn btn-primary leftLst">
+                    < </button>
+                        <button class="btn btn-primary rightLst">></button>
+            </div>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Pizza</h2>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Margherita Pizza</p>
+                        <p>₹169</p>
+                        <p class="fdescription">Delicious mozzarella cheese in every bite.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pizza1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Paneer Onion Pizza</p>
+                        <p>₹149</p>
+                        <p class="fdescription">A delectable combination of freshly cooked onions & paneer with our in
+                            house sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pizza2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Mexican Bonanza Pizza</p>
+                        <p>₹199</p>
+                        <p class="fdescription">A delectable fusion of Mexican flavors on a crispy pizza crust,
+                            featuring zesty salsa, succulent seasoned meats.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pizza3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Paneer Makhani Pizza</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            A tantalizing blend of rich Paneer Makhani sauce, marinated paneer cubes, and colorful bell
+                            peppers atop a golden pizza crust.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pizza4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Peri Peri Paneer Pizza</p>
+                        <p>₹179</p>
+                        <p class="fdescription">A fiery feast of Peri Peri-spiced paneer, vibrant bell peppers, red
+                            onions, and a perfect marriage of zesty flavors on a crispy pizza crust.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pizza5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Italian Season Pizza</p>
+                        <p>₹189</p>
+                        <p class="fdescription">
+                            A taste of Italy on every slice, featuring a medley of savory Italian herbs, garlic-infused
+                            tomato sauce, and melted mozzarella.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pizza6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Biryani</h2>
+            <hr>
+        </div>
+        <div class="biryani1 row product" id="biryani1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Pualo </p>
+                        <p>₹169</p>
+                        <p class="fdescription">
+                            A delightful medley of aromatic basmati rice, colorful vegetables, and fragrant spices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/biryani1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Hyderabadi Biryani
+                        </p>
+                        <p>₹149</p>
+                        <p class="fdescription">Medium spicy nutritious biriyani, layered with select spices and packed
+                            with vegetables</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/biryani2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Jeera Rice</p>
+                        <p>₹99</p>
+                        <p class="fdescription">Aromatic rice cooked in a tempering of cumin and whole spices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/biryani3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Cheese Paneer Biryani</p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            A scrumptious fusion of fragrant basmati rice, succulent paneer cubes, and aromatic spices,
+                            all layered with a generous dose of melted cheese.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/biryani4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/nonveg.png" alt="" class="veg">
+                        <p class="fname">Chicken Biryani</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            | Richly flavored rice layered with marinated chicken pieces in a delicate blend of spices |
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/biryani5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>North Indian</h2>
+            <hr>
+        </div>
+        <div class="north1 row product" id="north1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Special Punjabi Thali </p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            1 paneer sabji + veg sabji + 4 butter roti + dal fry + jeera rice + salad + achar + sweet +
+                            mukhwash</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/north1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Gujarati Thali
+                        </p>
+                        <p>₹199</p>
+                        <p class="fdescription">2 Veg Sabji + 1 Kathol Sabji + 6 Butter Roti + Dal Rice or Dal Khichidi
+                            + 1 Roasted Papad + Salad + Achar + Mukhwas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/north2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Misal Thali</p>
+                        <p>₹99</p>
+                        <p class="fdescription">An Authentic Maharastrian Full Meal Served With Misal, Sprouts,Farsan,
+                            Curd,Onion,Lemon,Gulab Jamun, Fried Papad,Butter Milk Along With 2 Pav.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/north3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Vagharela Khaman</p>
+                        <p>₹59</p>
+                        <p class="fdescription">
+                            A savory and fluffy Surti Khaman with a flavorful tempering.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/north4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Butter Locho</p>
+                        <p>₹59</p>
+                        <p class="fdescription">
+                            A mouthwatering delight from Gayatri Khaman Special.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/north5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Burger</h2>
+            <hr>
+        </div>
+        <div class="burger1 row product" id="burger1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Piri Piri Spicy Paneer Burger</p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            Indulge in a flavor-filled adventure with the irresistible Piri Piri McSpicy Paneer burger
+                            (no onion and no garlic)!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/burger1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/nonveg.png" alt="" class="veg">
+                        <p class="fname">Spicy Chicken Double Patty Burger
+                        </p>
+                        <p>₹239</p>
+                        <p class="fdescription">Two tender & juicy chicken patties coated in spicy, crispy batter topped
+                            with a creamy sauce & crispy shredded lettuce will have you craving for more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/burger2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Mexican Aloo Tikki Double Patty Burger</p>
+                        <p>₹99</p>
+                        <p class="fdescription">A fusion of International taste combined with your favourite aloo tikki
+                            now with two patties</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/burger3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Spicy Paneer Burger</p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            Indulge in rich & filling spicy paneer patty served with creamy sauce, and crispy lettuce,
+                            irresistibly satisfying!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/burger4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/nonveg.png" alt="" class="veg">
+                        <p class="fname">Grilled Chicken & Cheese Burger</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            A grilled chicken patty, topped with sliced cheese, spicy Habanero sauce, with some heat
+                            from jalapenos & crunch from onions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/burger5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Cheese Italian Veg Burger</p>
+                        <p>₹169</p>
+                        <p class="fdescription">
+                            Indulge in a Cheese experience with our Cheese Italian Veg Burger. Corn n Cheese Patty
+                            encased in our Sesame Bun, paired with Tomato Slices</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/burger6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Rolls</h2>
+            <hr>
+        </div>
+        <div class="rolls1 row product" id="rolls1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Paneer Shawarma</p>
+                        <p>₹99</p>
+                        <p class="fdescription">
+                            (jain available) malai paneer marinated with indian seasoning and roasted to a light
+                            crispiness topped with home made mayonnaise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/rolls1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Chilli Garlic Shawarma
+                        </p>
+                        <p>₹239</p>
+                        <p class="fdescription">Malai paneer marinated with indian seasoning and roasted to a light
+                            crispiness topped with home made mayonnaise, garlic sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/rolls2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Tandoori Paneer Shawarma</p>
+                        <p>₹129</p>
+                        <p class="fdescription">(jain available) malai paneer marinated with indian seasoning and
+                            roasted to a light crispiness topped with home made mayonnaise, tandoori sauce, tomato
+                            ketchup, cabbage</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/rolls3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Frankie</p>
+                        <p>₹79</p>
+                        <p class="fdescription">
+                            A delectable blend of spiced and stir-fried mixed vegetables, wrapped in a soft, thin
+                            flatbread, creating a flavorful and satisfying Veg Frankie roll.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/rolls4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/nonveg.png" alt="" class="veg">
+                        <p class="fname">Chicken Roll</p>
+                        <p>₹119</p>
+                        <p class="fdescription">
+                            A mouthwatering combination of succulent grilled chicken, crisp veggies, and zesty sauces
+                            rolled in a soft flatbread, offering a savory</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/rolls5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Big Spicy Paneer Wrap</p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            Experience indulgence in every bite with a wrap made of crispy, spicy paneer patty, tomato
+                            mayo, lettuce, onions, tomatoes & cheese.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/rolls6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Khichdi</h2>
+            <hr>
+        </div>
+        <div class="khichdi1 row product" id="khichdi1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <h2>Khichdi</h2>
+                        <hr>
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Masala Khichdi</p>
+                        <p>₹159</p>
+                        <p class="fdescription">
+                            A flavorful and aromatic Indian delicacy that combines rice and lentils in a comforting and
+                            hearty main course.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Moraiya Khichdi
+                        </p>
+                        <p>₹119</p>
+                        <p class="fdescription">A flavorful and royal dish from the Rajwadi cuisine, perfect for a
+                            delightful vegetarian meal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Achari Khichdi</p>
+                        <p>₹129</p>
+                        <p class="fdescription">Aromatic rice dish with tangy and flavorful herbs and spices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Dal Khichdi</p>
+                        <p>₹249</p>
+                        <p class="fdescription">
+                            Yellow Lentils & Rice Cooked To A Porridge Consistency Tempered With Tadka & Oil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Rajwadi Khichdi (non jain)</p>
+                        <p>₹119</p>
+                        <p class="fdescription">
+                            Rajwadi khichdi requires sauteing basmati rice, dal and mix veggie in ghee with spices
+                            followed by boiling in deep pan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Kadhi Khichdi</p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            A delightful duo of creamy spiced yogurt curry (Kadhi) and wholesome rice-lentil blend
+                            (Khichdi), Kadi Khichdi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>South Indian</h2>
+            <hr>
+        </div>
+        <div class="south1 row product" id="south1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <h2>South Indian</h2>
+                        <hr>
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Jini Roll</p>
+                        <p>₹239</p>
+                        <p class="fdescription">
+                            A delightful dosa transformed into a roll, filled with a mix of flavors and ingredients,
+                            offering a unique and portable dosa experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/south1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Pizza Dhosa
+                        </p>
+                        <p>₹249</p>
+                        <p class="fdescription">A delectable fancy dosa filled with savory goodness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/south2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Paneer Gotala
+                        </p>
+                        <p>₹279</p>
+                        <p class="fdescription">A dosa filled with a flavorful and spiced paneer (cottage cheese)
+                            gotala, creating a savory and satisfying dish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/south3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Masala Dhosa (Butter)</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            Melt-in-your-mouth veg and cheese grilled to perfection in between two slices of bread.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/south4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Mysore Masala (Butter)</p>
+                        <p>₹159</p>
+                        <p class="fdescription">
+                            A dosa filled with traditional Mysore masala, enhanced with a buttery finish for an
+                            authentic and aromatic dosa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/south5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Idli (Oil)</p>
+                        <p>₹79</p>
+                        <p class="fdescription">
+                            Soft and spongy steamed rice cakes, offering a light and versatile treat often enjoyed with
+                            various chutneys and sambar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/khichdi6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Shakes</h2>
+            <hr>
+        </div>
+        <div class="shake1 row product" id="shake1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Chocolate Monster Shake</p>
+                        <p>₹199</p>
+                        <p class="fdescription">
+                            Name Is Enough Because Monster Comes With Some Crazy Types Of Chocolates With Best Version
+                            Of Thick Shake You'Ll Ever Have. A Classic Old School Treat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/shake1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Nutella Fudge Shake
+                        </p>
+                        <p>₹199</p>
+                        <p class="fdescription">It Is A Remarkable Heavy Duty Nutella Shake Served With So Much Love Of
+                            Nutella And Topped With A More Nutella Chocolate Sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/shake2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Oreo Freak Shake
+                        </p>
+                        <p>₹219</p>
+                        <p class="fdescription">Oreo Thickshake With Cream Filling To Take It Over-The-Top And Make It
+                            Super Indulgent And Extra Creamy! With Swirls Of Chocolate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/shake3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Shakesee Special Shake</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            A luscious concoction featuring a delightful blend of premium ingredients, offering a
+                            uniquely flavorful and indulgent shake experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/shake4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Brownie Fudge Freak Shake</p>
+                        <p>₹219</p>
+                        <p class="fdescription">
+                            The Ultimate Brownie Milkshake Is An Extremely Decadent Dessert And A Satisfying Thickshake
+                            All In One! Loaded With Brownies, Chocolate Chip Cookies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/shake5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Chinese</h2>
+            <hr>
+        </div>
+        <div class="chinese1 row product" id="chinese1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Manchurian Rice</p>
+                        <p>₹129</p>
+                        <p class="fdescription">
+                            Delight in the delectable flavors of this savory and flavorful vegetable-infused rice dish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/chinese1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Chinese Bhel
+                        </p>
+                        <p>₹119</p>
+                        <p class="fdescription">A tantalizing crunch of herbs, spices, and vegetables, expertly blended
+                            to create a savory and satisfying dish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/chinese2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Hakka Noodels
+                        </p>
+                        <p>₹219</p>
+                        <p class="fdescription">Tantalizing vegetable noodles with a delectable fusion twist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/chinese3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Manchurian Noodles</p>
+                        <p>₹119</p>
+                        <p class="fdescription">
+                            Delicious fusion of vegetables and noodles, bursting with flavors and textures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/chinese4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Manchow Soup</p>
+                        <p>₹99</p>
+                        <p class="fdescription">
+                            A savory and robust Chinese-inspired soup, brimming with finely chopped vegetables, subtle
+                            spices, and crispy noodles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/chinese5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Manchurian Dry</p>
+                        <p>₹159</p>
+                        <p class="fdescription">
+                            A delectable Indo-Chinese dish comprising vegetable dumplings, garlic, and aromatic spices
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/chinese6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Paratha</h2>
+            <hr>
+        </div>
+        <div class="paratha1 row product" id="paratha1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Veg Paratha</p>
+                        <p>₹49</p>
+                        <p class="fdescription">
+                            Flaky and wholesome Indian flatbread, expertly crafted with layers, usually stuffed with
+                            spiced vegetables, paneer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/paratha1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Lachchha Paratha
+                        </p>
+                        <p>₹119</p>
+                        <p class="fdescription">A multi-layered, flaky Indian flatbread known for its spiral-like
+                            appearance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/paratha2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/nonveg.png" alt="" class="veg">
+                        <p class="fname">Chicken Parathas
+                        </p>
+                        <p>₹219</p>
+                        <p class="fdescription">Soft fluffy paratha with a delicious chicken stuffing, cooked to
+                            perfection|Chef'S Special</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/paratha3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Aloo Paratha</p>
+                        <p>₹119</p>
+                        <p class="fdescription">
+                            A classic North Indian dish featuring unleavened flatbread stuffed with a flavorful mixture
+                            of spiced mashed potatoes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/paratha4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Tawa Paratha</p>
+                        <p>₹39</p>
+                        <p class="fdescription">
+                            Flaky and soft layered unleavened flatbread made using whole wheat flour</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/paratha5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Pasta</h2>
+            <hr>
+        </div>
+        <div class="row product" id="pasta1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Combination Pasta</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            PENNE PASTA COOKED IN COMBINATION OF WHITE AND RED SAUCE.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pasta1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">White Sauce Pasta
+                        </p>
+                        <p>₹199</p>
+                        <p class="fdescription">A creamy and indulgent Italian-inspired dish consisting of al dente
+                            pasta, flour, milk, and Parmesan cheese,.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pasta2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Garlic Pasta
+                        </p>
+                        <p>₹219</p>
+                        <p class="fdescription">A flavorful and aromatic dish where pasta is infused with the robust
+                            essence of garlic, typically sautéed in olive oil or butter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pasta3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Italian Pasta (whole Wheat )</p>
+                        <p>₹279</p>
+                        <p class="fdescription">
+                            A nutritious twist on traditional Italian pasta, crafted with whole wheat for added fiber
+                            and health benefits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pasta4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Red Sauce Pasta</p>
+                        <p>₹169</p>
+                        <p class="fdescription">
+                            A classic Italian-inspired dish featuring al dente pasta coated in a savory and tangy
+                            tomato-based sauce, often enriched with garlic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/pasta5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Noodles</h2>
+            <hr>
+        </div>
+        <div class="noodles1 row product" id="noodles1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Singapore Noodles</p>
+                        <p>₹149</p>
+                        <p class="fdescription">
+                            Sumptuous noodle dish perfectly cooked with zesty flavored veggies and cashew nuts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/noodles1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Chilli Garlic Noodle
+                        </p>
+                        <p>₹199</p>
+                        <p class="fdescription">Spicy - Noodles Tossed With Chilly Flakes, Garlic and Vegetables.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/noodles2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Mushroom Noodles
+                        </p>
+                        <p>₹219</p>
+                        <p class="fdescription">NOODLES TOSSED WITH BUTTON MUSHROOM AND CHINESE FLAVOURS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/noodles3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Schezwan Noodles</p>
+                        <p>₹239</p>
+                        <p class="fdescription">
+                            A fiery and flavorful Indo-Chinese delight, showcasing stir-fried noodles tossed in a bold
+                            and spicy Schezwan sauce.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/noodles4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Masala Maggi</p>
+                        <p>₹69</p>
+                        <p class="fdescription">
+                            A simple and classic preparation of Maggi with the infusion of masala.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/noodles5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Singapuri Noodles</p>
+                        <p>₹99</p>
+                        <p class="fdescription">
+                            Tantalizingly flavored noodles from the heart of Singapore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/noodles6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row heading">
+            <hr class="hr1">
+            <h2>Cakes</h2>
+            <hr>
+        </div>
+        <div class="row product" id="cake1">
+            <hr class="hr1">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Rasmalai Cake</p>
+                        <p>₹479</p>
+                        <p class="fdescription">
+                            This Cake is a celebration of traditional Indian flavor rasmalai. It offers a unique dessert
+                            experience that brings the beloved tastes of Rasmalai into the realm of cakes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/cake1.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Pineapple Cake
+                        </p>
+                        <p>₹199</p>
+                        <p class="fdescription">A homemade style, soft vanilla sponge with pieces of pineapple.
+                            Garnished with pineapple pulp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/cake2.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Oreo Cake [300 grams]
+                        </p>
+                        <p>₹269</p>
+                        <p class="fdescription">This chocolate oreo cake is to die for, loaded with oreo icing and
+                            crushed up oreos with rich and creamy frosting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/cake3.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Dora Cake</p>
+                        <p>₹179</p>
+                        <p class="fdescription">
+                            Enjoy this japanese multigrain pancake with filling and add ons of your choice.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/cake4.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Kasata Cake</p>
+                        <p>₹269</p>
+                        <p class="fdescription">
+                            Perfect fusion of 7 creamy and biscuit flavors of mixed fruits. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/cake5.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+
+        
+        <div class="row product">
+            <div class="col-xs-6 col-md-9 col-sm-6">
+                <div class=" food2 food1">
+                    <div class="fdiv">
+                        <img src="image/veg.png" alt="" class="veg">
+                        <p class="fname">Nutella Cake [500gm]</p>
+                        <p>₹599</p>
+                        <p class="fdescription">
+                            This nutella cake is an incredible combination of deliciously moist chocolate cake and
+                            luscious nutella cream. It's a decadent dessert that you must try!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-6 product_image">
+                <img src="image/cake6.avif" alt="" class="fsize">
+                <button class="add">add</button>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-list"></ul>
+        <p id="total-price">Total: ₹0.00</p>
+        <button type="submit" onclick="generatePdf()">PRINT</button>
+    </div>
+
+
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

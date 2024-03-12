@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>SnapBite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="faq.css">
+
+</head>
+
+<body>
+
+    <header class="header1 sticky">
+        <a class="a1"href="/">
+            <img src="image/favicon-192x192.png" class="logo"></a>
+        <ul class="header2">
+            <li class="search1" onclick="toggleSearchInput()">
+                <img src="image/search.png" class="search">Search</li>
+                
+            <li style="display: none;" class="search-input"> <input type="search" name="" id="find" placeholder="search here...." onkeyup="search()"></li>
+            <a class="a1"href="/help.html"><li class="help1"><img src="image/help.png" class="help">Help</li></a>
+            <a class="a1"href="/contact.html"><li class="contact1"><img src="image/contact.png" class="contact">Contact</li></a>
+        </ul>
+    </header>
+
+    <div class="container content">
+        <h2 class="white">Help & Support</h2>
+        <h5 class="white">Let's take a step ahead and help you better.</h5>
+        <div class="row">
+            
+                <div class="help2 col-md-3">
+                    <div class="legal">
+                        <a class="a1"href="help.html">Legal</a>
+                    </div>
+                            <div class="faq">
+                                <a class="a1"href="faq.html">FAQ</a>
+                            </div>
+                </div>
+                <div class="help3 col-md-9">
+                    <h2 class="margin">FAQ</h2>
+                    <span onclick="toggle3()" class="span">I want to explore career opportunities with SnapBite
+                    <i class="fa fa-angle-down" style="font-size:30px; padding-left:38%"></i></span>
+                    <br>
+                    <button type="submit" class="email1" style="display: none;"><b><a href="mailto:nevilvataliya@gmail.com">SEND AN EMAIL</a></b>
+                    </button>
+                    <hr>
+                    <span onclick="toggle4()" class="span">I want to provide feedback
+                    <i class="fa fa-angle-down" style="font-size:30px; padding-left:66%"></i></span><br>
+                    <button type="submit" class="email2" style="display: none;"><b><a href="mailto:nevilvataliya@gmail.com">SEND AN EMAIL</a></b></button>
+                    <hr>
+                    <span onclick="toggle5()" class="span">Can I edit my order?
+                    <i class="fa fa-angle-down" style="font-size:30px; padding-left:72.5%"></i></span>
+                    <p style="display: none;" class="faq3">
+                        Your order can be edited before it reaches the restaurant. You could contact customer support team via chat or call to do so. Once order is placed and restaurant starts preparing your food, you may not edit its contents 
+                    </p>
+                    <hr>
+                    <span onclick="toggle6()" class="span">Do you support bulk orders?
+                    <i class="fa fa-angle-down" style="font-size:30px; padding-left:64%"></i></span>
+                    <p style="display: none;" class="faq4">
+                        In order to provide all customers with a great selection and to ensure on time delivery of your meal, we reserve the right to limit the quantities depending on supply.
+                    </p>
+                    <hr>
+                </div>
+                </div>
+            </div>
+    </div>
+ 
+</body>
+
+</html>

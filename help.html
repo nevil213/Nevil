@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>SnapBite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="help.css">
+
+</head>
+
+<body>
+
+    <header class="header1 sticky">
+        <a class="a1"href="/">
+            <img src="image/favicon-192x192.png" class="logo"></a>
+        <ul class="header2">
+            <li class="search1" onclick="toggleSearchInput()">
+                <img src="image/search.png" class="search">Search</li>
+                
+            <li style="display: none;" class="search-input"> <input type="search" name="" id="find" placeholder="search here...." onkeyup="search()"></li>
+            <a class="a1"href="/help.html"><li class="help1"><img src="image/help.png" class="help">Help</li></a>
+            <a class="a1"href="/contact.html"><li class="contact1"><img src="image/contact.png" class="contact">Contact</li></a>
+        </ul>
+    </header>
+
+    <div class="container content">
+        <h2 class="white">Help & Support</h2>
+        <h5 class="white">Let's take a step ahead and help you better.</h5>
+        <div class="row">
+            
+                <div class="help2 col-md-3">
+                    <div class="legal">
+                        <a class="a1" href="help.html">Legal</a>
+                    </div>
+                            <div class="faq">
+                                <a class="a1" href="faq.html">FAQ</a>
+                            </div>
+                </div>
+                <div class="help3 col-md-9">
+                    <h2 class="margin">Legal</h2>
+                    <span onclick="toggle1()" class="span">Terms of Use
+                    <i class="fa fa-angle-down" style="font-size:30px; padding-left:80%"></i></span>
+
+                    <p style="display: none;" class="term">
+                        These terms of use (the "Terms of Use") govern your use of our website www.snapbite.in (the "Website") and our "snapbite" application for mobile and handheld devices (the "App"). The Website and the App are jointly referred to as the "Services"). Please read these Terms of Use carefully before you download, install or use the Services. If you do not agree to these Terms of Use, you may not install, download or use the Services. By installing, downloading or using the Services, you signify your acceptance to the Terms of Use and Privacy Policy (being hereby incorporated by reference herein) which takes effect on the date on which you download, install or use the Services, and create a legally binding arrangement to abide by the same.
+                    </p>
+                    <hr>
+                    <span onclick="toggle2()" class="span">Privacy Policy
+                    <i class="fa fa-angle-down" style="font-size:30px; padding-left:79%"></i></span>
+                    <p style="display: none;" class="policy">
+                        We ( Bundl Technologies Private Limited, alias "snapbite" ) are fully committed to respecting your privacy and shall ensure that your personal information is safe with us. This privacy policy sets out the information practices of www.snapbite.com ("Website") including the type of information is collected, how the information is collected, how the information is used and with whom it is shared. Reference to "you" in this Privacy Policy refers to the users of this Website whether or not you access the services available on the Website or consummate a transaction on the Website. By using or accessing this Website, you agree to the terms and conditions of this Privacy Policy. You also expressly consent to our use and disclosure of your Personal Information (as defined below) in any manner as described in this Privacy Policy and further signify your agreement to this Privacy Policy and the Terms of Use (being incorporated by reference herein). If you do not agree with the terms and conditions of this Privacy Policy, please do not proceed further or use or access this Website. 
+                    </p>
+                    <hr>
+                </div>
+                </div>
+            </div>
+    </div>
+ 
+</body>
+
+</html>

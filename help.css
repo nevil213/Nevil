@@ -1,0 +1,64 @@
+body{
+    background-color: #37718E;
+}
+
+h2{
+    margin-top: 5%;
+}
+.white{
+    color:white;
+    font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+}
+
+.row{
+    background-color: white;
+    margin-top: 5%;
+    display: flex;
+}
+
+.help2{
+    background-color: #edf1f7;
+    width:20%;
+    height: 500px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-size: larger;
+}
+
+.legal{
+    padding:12% 0% 6% 15%;
+}
+.faq{
+    padding:7% 0% 6% 15%;
+}
+
+.a1{
+    color:gray;
+}
+a:hover{
+    color: black;
+}
+
+.help3{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 7%;
+}
+
+span{
+    font-size: larger;
+    color:#525252;
+}
+p{
+    padding-top: 2%;
+    color:#6A6A6A;
+}
+
+span:hover{
+    color:#ff9500;
+}
+
+.margin{
+    margin-bottom: 3.5%;
+}
