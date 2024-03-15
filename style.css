@@ -6,7 +6,7 @@
 }.logo{
     width: 60px;
     margin-left: 10%;
-    margin-top: 6px;
+    margin-top: 9px;
     display:flex;
     margin-bottom: 7px;
 }
@@ -18,6 +18,11 @@ li{
 .search{
     width:23px;
     margin-right:10px;
+    cursor: pointer;
+}
+
+.search1{
+    cursor: pointer;
 }
 .help{
     width:23px;
@@ -36,10 +41,13 @@ li{
 li{
     margin-right: 58px;
 }
+
 .header1{
     list-style-type: none;
     font-size: 22px;
     display:flex;
+    justify-content: space-between;
+
     padding-left: 10%;
     padding-right: 10%;
     box-shadow:0 15px 40px -20px rgba(40,44,63,.15);
@@ -168,8 +176,8 @@ li{
     font-size:87%;
   }
 
-#find::content{
-    padding-left: 5%;
+#find{
+    margin-top: 8%;
 }
 
 span:hover{
@@ -178,6 +186,8 @@ span:hover{
 
 .span{
     margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -314,7 +324,7 @@ span:hover{
 }
 
 .quantity-btn{    
-    width: 2%;
+    width: 26px;
     background-color: #ff9500;
     border-radius: 5px;
     margin-bottom: 1%;
@@ -323,11 +333,12 @@ span:hover{
 }
 
 .quantity-btn:hover{
-    background-color: #15cf00;
+    background-color: rgb(235, 78, 0);
 }
 
 span{
     margin-bottom: 2%;
+    cursor: pointer;
 }
 
 .product{
@@ -344,4 +355,42 @@ span{
 
 .heading{
     padding: 15px;
+}
+
+.print{
+    padding: 2px 6px;
+    background-color: #ff9500;
+    border-radius: 11%;
+}
+
+@media only screen and (max-width:800px) {
+    .container .row{
+ margin-left: 10px;
+ margin-right: 10px;
+    .help2{
+        width: 34%;
+        margin-left: 2%;
+    }
+}
+}
+
+.topnav{
+    margin-top: 1%;
+}
+
+@media screen and (max-width:600px) {
+    .topnav{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    ul a li{
+        margin-right: 22px;
+    }
+    
 }
