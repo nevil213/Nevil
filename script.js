@@ -263,3 +263,10 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
