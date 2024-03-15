@@ -7,71 +7,18 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>SnapBite</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
-        id="bootstrap-css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!------ Include the above in your HEAD tag ---------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .topnav {
-            overflow: hidden;
-            /* background-color: #333; */
-        }
-
-        .topnav a {
-            float: left;
-            display: block;
-            /* color: #f2f2f2; */
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-
-        .topnav .icon {
-            display: none;
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) {
-                display: none;
-            }
-
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav.responsive {
-                position: relative;
-            }
-
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- <header class="header1 sticky">
-        <a href="/"><img src="favicon-192x192.png" class="logo"></a>
+        <a href="Nevil/index.html"><img src="favicon-192x192.png" class="logo"></a>
         <ul class="header2">
             <li class="search1" onclick="toggleSearchInput()">
                 <img src="search.png" class="search">Search
@@ -79,7 +26,7 @@
 
             <li style="display: none;" class="search-input"> <input type="search" name="" id="find"
                     placeholder="search here...." onkeyup="search()"></li>
-            <a href="/help.html">
+            <a href="Nevil/help.html">
                 <li class="help1"><img src="help.png" class="help">Help</li>
             </a>
             <a href="#cart">
@@ -88,11 +35,36 @@
         </ul>
     </header> -->
 
-
+<!-- 
     <div class=" header1 sticky" id="myTopnav">
         <a href="/"><img src="favicon-192x192.png" class="logo"></a>
     <div class="topnav" >
-        <a></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>     
+        <div class="margin">
+        <a>
+            <p class="search1" onclick="toggleSearchInput()">
+                <img src="search.png" class="search">Search
+            </p>
+            <a style="padding: 0;">
+                <p style="display: none;" class="search-input"> <input type="search" name="" id="find"
+                        placeholder="search here...." onkeyup="search()"></p>
+            </a>
+        </a></div>
+        <a href="/help.html">
+            <p class="help1"><img src="help.png" class="help">Help</p>
+        </a>
+        <a href="#cart">
+            <p class="contact1"><img src="cart.png" class="contact">Cart</p>
+        </a>
+    </div>
+    </div> -->
+
+
+    <div class=" header1 sticky">
+        <a href="/"><img src="favicon-192x192.png" class="logo"></a>
+    <div class="topnav"  id="myTopnav">
         <a>
             <p class="search1" onclick="toggleSearchInput()">
                 <img src="search.png" class="search">Search
