@@ -106,54 +106,58 @@ $(document).ready(function () {
 });
 
 function search() {
-let filter = document.getElementById('find').value.toUpperCase();
-let item = document.querySelectorAll('.product');
-console.log(item);
-let l = document.getElementsByTagName('p');
-for(var i = 0;i<=l.length;i++){
-let a=item[i].getElementsByTagName('p')[0];
-let value=a.innerHTML || a.innerText || a.textContent;
-if(value.toUpperCase().indexOf(filter) > -1) {
-item[i].style.display="";
+    let filter = document.getElementById('find').value.toUpperCase();
+    let item = document.querySelectorAll('.product');
+    let l = document.getElementsByTagName('p');
+    let z = document.getElementsByClassName('heading');
+    for (var i = 0; i <= l.length; i++) {
+        let a = item[i].getElementsByTagName('p')[0];
+        let value = a.innerHTML || a.innerText || a.textContent;
+        if (value.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display = "";
+            for (let i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+        }
+        else {
+            item[i].style.display = "none";
+            
+        }
+    }
 }
-else
-{
-item[i].style.display="none";
-}
-}
-}
+
 
 function toggleSearchInput() {
     var searchInput = document.querySelector('.search-input');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
+}
 
-  function toggle1() {
+function toggle1() {
     var searchInput = document.querySelector('.term');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
-  function toggle2() {
+}
+function toggle2() {
     var searchInput = document.querySelector('.policy');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
-  function toggle3() {
+}
+function toggle3() {
     var searchInput = document.querySelector('.email1');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
-  function toggle4() {
+}
+function toggle4() {
     var searchInput = document.querySelector('.email2');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
-  function toggle5() {
+}
+function toggle5() {
     var searchInput = document.querySelector('.faq3');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
-  function toggle6() {
+}
+function toggle6() {
     var searchInput = document.querySelector('.faq4');
     searchInput.style.display = (searchInput.style.display === 'none' || searchInput.style.display === '') ? 'block' : 'none';
-  }
-      // Sample Cart Object
-     var cart = [];
+}
+// Sample Cart Object
+var cart = [];
 
 // Function to add items to the cart
 function addToCart(itemName, price) {
@@ -232,21 +236,30 @@ addButton.forEach(function (button, index) {
 });
 
 
-    
-    let button = document.getElementById("button");
-    let makepdf = document.getElementById("cart");
- 
-    button.addEventListener("click", function () {
-        let mywindow = window.open("", "PRINT", 
-                "height=400,width=600");
- 
-        mywindow.document.write(makepdf.innerHTML);
- 
-        mywindow.document.close();
-        mywindow.focus();
- 
-        mywindow.print();
-        mywindow.close();
- 
-        return true;
-    });
+
+let button = document.getElementById("button");
+let makepdf = document.getElementById("cart");
+
+button.addEventListener("click", function () {
+    let mywindow = window.open("", "PRINT",
+        "height=400,width=600");
+
+    mywindow.document.write(makepdf.innerHTML);
+
+    mywindow.document.close();
+    mywindow.focus();
+
+    mywindow.print();
+    mywindow.close();
+
+    return true;
+});
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
